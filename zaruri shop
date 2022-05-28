@@ -1,0 +1,1295 @@
+GMENU={1:'~~~~~~~~~~~~~~~~~~~~~~1-MEN~~~~~~~~~~~~~~~~~~~~~~~~',2:'~~~~~~~~~~~~~~~~~~~~~~2-WOMEN~~~~~~~~~~~~~~~~~~~~~~',3:'~~~~~~~~~~~~~~~~~~~~~~3-EXIT~~~~~~~~~~~~~~~~~~~~~~~'}
+WMENU={1:'~~~~~~~~~~~~~~~~~~~~~~11-SNEAKER HOOD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~',2:'~~~~~~~~~~~~~~~~~~~~~~22-JEAN FIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~',3:'~~~~~~~~~~~~~~~~~~~~~~33-ON TOP OF THE WORLD~~~~~~~~~~~~~~~~~~~~~~'}
+MMENU={1:'~~~~~~~~~~~~~~~~~~~~~~11-SNEAKER HOOD~~~~~~~~~~~~~~~~~~~~~~',2:'~~~~~~~~~~~~~~~~~~~~~~22-SHIRT CLASS~~~~~~~~~~~~~~~~~~~~~~',3:'~~~~~~~~~~~~~~~~~~~~~~33-DENIM SHENIM~~~~~~~~~~~~~~~~~~~~~~'}
+SNMENU={1:'~~~~~~~~~~~~~~~~~~~~~~23-NIKE~~~~~~~~~~~~~~~~~~~~~~',2:'~~~~~~~~~~~~~~~~~~~~~~45-PUMA~~~~~~~~~~~~~~~~~~~~~~',3:'~~~~~~~~~~~~~~~~~~~~~~69-CONVERSE~~~~~~~~~~~~~~~~~~~~~~'}
+JEAN={1:'20--CLASSIC BLACK          7600',2:'30--CHARCOAL GREY          2600',3:'70--CHERRY RED             1700',4:'10--CHUNKEY GREEN          2200',5:'77--WHITE FEARLESS         900'}
+TOP={1:'13--BLACK HIGH NECK       7600',2:'51--RED OFF SHOULDER      2600',3:'73--WHITE ASYMETRIC       1700',4:'17--GREEN SCOOP           2200',5:'69--WHITE ILLUSION         900'}
+SHIR={1:'46--CLASSIC BLACK         7600',2:'47--CHARCOAL GREY         2600',3:'56--CHERRY RED            1700',4:'57--YELLOW STRIPES        2200',5:'59--WHITE FEARLESS         900'}
+DNM={1:'14--BLACK DENIM JEANS     7600',2:'71--GREY SWEATPANTS       2600',3:'89-- FUNKY DENIM RED      1700',4:'25--RUGGED PANTS          2200',5:'48--WHITE SIMP            9000'}
+NIK={1:'12--AIR JORDANS 1 RETRO CLASSIC     76,000',2:'13--NIKE ZOOM-X CHARCOAL BLACK      26,000',3:'98--NIKE COURT LEGACY OG            17,000',4:'66--NIKE AIR MAX 17 SERIES          22,000',5:'51--AIR FORCE OG WHITE FEARLESS     9000'}
+PUM={1:'21--RETRO OG RED AND GREY           76,000',2:'00--RS-X CHARCOAL BLACK             26,000',3:'92--PANTHER BMW OG                  17,000',4:'110-- PUMA X MERC 11 SERIES         22,000',5:'7878-- FEARLESS                     9000'}
+CON={1:'90--ALL STARS CONVERSE              76,000',2:'93--HIGH TOP LOW SOLE NAVY          26,000',3:'61--RED VALENTINE                   17,000',4:'19--AGELESS                         22,000',5:'80--MID TOP CHECKS GRAY             9000'}
+print("____HELLO Ji_____")
+print("~~~~ WELCOME HAPPY USER ~~~~~")
+print("**please select a choice")
+print("~~~~ *Enter 1  if you are a Customer~~~~~")
+print("~~~~ *Enter 2  if you are an Admin~~~~~")
+print("~~~~ *Enter 3  if you want to EXIT~~~~~")
+firsc=int(input("yes, what is your choice? "))
+while firsc==1 :
+
+    print("WELCOME CUSTOMER")
+    print("to login , press 1")
+    print("to browse items without login , press 2")
+    print("to exit , press 3")
+    firsc=int(input("choice? "))
+    if firsc==1:
+        print("enter your customer id and password please")
+        CID=str(input("id - "))
+        pswd=input("password - ")
+        if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+            print("login succesful !!")
+            print("to browse Genres , press 1")
+            print("to exit press , 3")
+            firsc=int(input("btao ji "))
+            if firsc==1:
+                for i in GMENU:
+                    print(GMENU[i])
+                    i+=1
+                firsc=int(input("your preference ? "))
+                if firsc==1:
+                        for k in MMENU:
+                            print(MMENU[k])
+                            k+=1
+                        print("choose any option")
+                        print("to exit press 3")
+                        firsc=int(input("choice?? "))
+                        if firsc==11:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE SNEAKER HOOD^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we provide 3 different brands")
+                            for z in SNMENU:
+                                print(SNMENU[z])
+                                z+=1
+                       
+                            firsc=int(input("choice ? "))
+                            if firsc==23:
+                                for c in NIK:
+                                    print(NIK[c])
+                                    c+=1
+                            elif firsc==45:
+                                for c in PUM:
+                                    print(PUM[c])
+                                    c+=1
+                            elif firsc==69:
+                                for c in CON:
+                                    print(CON[c])
+                                    c+=1
+                            print("to EXIT press 3")
+                            print("to order , select any shoe ")
+                            firsc=int(input("choice ?? "))
+                            simp=int(input("how many peices? "))
+                            if firsc==12:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==21:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==90:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==13 or firsc==00 or firsc==93 :
+                                    print("ok")
+                                    j=simp*26000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==61 or firsc==92 or firsc==98 :
+                                    print("ok")
+                                    j=simp*17000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==66 or firsc==110 or firsc==19 :
+                                    print("ok")
+                                    j=simp*22000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==51 or firsc==7878 or firsc==80 :
+                                    print("ok")
+                                    j=simp*9000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==3:
+                                print("APP CLOSED !")
+                            else:
+                                print("INVALID CHOICE !!")
+                               
+                        elif firsc==22:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE THE SHIRT CLASS^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we are basically a sneakeer based app , so we provide limited yet CLASSY shirts")
+                            for p in SHIR:
+                                print(SHIR[p])
+                                p+=1
+                            print("to EXIT press 3")
+                            print("to order , select any shirt ")
+                            firsc=int(input("choice ?? "))
+                            simp=int(input("how many peices? "))
+                            if firsc==46:
+                                    print("ok")
+                                    j=simp*7600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shirt size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==47:
+                                    print("ok")
+                                    j=simp*2600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shirt size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==56:
+                                    print("ok")
+                                    j=simp*1700
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shirt size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==57:
+                                    print("ok")
+                                    j=simp*2200
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shirt size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==59:
+                                    print("ok")
+                                    j=simp*900
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shirt size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            else:
+                                print("INVALID CHOICE !!")
+                        elif firsc==33:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE THE DENIM SHENIM^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we are basically a sneakeer based app , so with dope footwear , you also need some dope DENIMS , there you go !!")
+                            for p in DNM:
+                                print(DNM[p])
+                                p+=1
+                            print("to EXIT press 3")
+                            print("to order , select any DENIM ")
+                            firsc=int(input("choice ?? "))
+                            simp=int(input("how many peices? "))
+                            if firsc==14:
+                                    print("ok")
+                                    j=simp*7600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter DNM size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==71:
+                                    print("ok")
+                                    j=simp*2600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter DNM size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==89:
+                                    print("ok")
+                                    j=simp*1700
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter DNM size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==25:
+                                    print("ok")
+                                    j=simp*2200
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter DNM size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            elif firsc==48:
+                                    print("ok")
+                                    j=simp*900
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter DNM size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                            else:
+                                print("INVALID CHOICE !!")
+                        else:
+                            print("INVALID CHOICE !!")
+                           
+#WOMEN SHOPPING STARTS HERE
+                           
+                elif firsc==2:
+                    for k in WMENU:
+                            print(WMENU[k])
+                            k+=1
+                    print("choose any option")
+                    print("to exit press 3")
+                    firsc=int(input("choice?? "))
+                    if firsc==11:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE SNEAKER HOOD^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we provide 3 different brands")
+                        for z in SNMENU:
+                            print(SNMENU[z])
+                            z+=1
+                        print("press 3 to EXIT")
+                        firsc=int(input("choice ? "))
+                        if firsc==23:
+                            for c in NIK:
+                                print(NIK[c])
+                                c+=1
+                        elif firsc==45:
+                            for c in PUM:
+                                print(PUM[c])
+                                c+=1
+                        elif firsc==69:
+                            for c in CON:
+                                print(CON[c])
+                                c+=1
+                        print("to order , select any shoe ")
+                        firsc=int(input("choice ?? "))
+                        simp=int(input("how many peices? "))
+                        if firsc==12:
+                                print("ok")
+                                j=simp*76000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==21:
+                                print("ok")
+                                j=simp*76000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==90:
+                                print("ok")
+                                j=simp*76000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==13 or firsc==00 or firsc==93 :
+                                print("ok")
+                                j=simp*26000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==61 or firsc==92 or firsc==98 :
+                                print("ok")
+                                j=simp*17000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==66 or firsc==110 or firsc==19 :
+                                print("ok")
+                                j=simp*22000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==51 or firsc==7878 or firsc==80 :
+                                print("ok")
+                                j=simp*9000
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter shoe size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        else:
+                            print("INVALID CHOICE !!")
+                       
+                    elif firsc==22:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE JEAN FIT SECTION^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we are basically a sneakeer based app , so we provide limited yet STYLISH JEANS")
+                        for p in JEAN:
+                            print(JEAN[p])
+                            p+=1
+                        print("to EXIT press 3")
+                        print("to order , select any jeans ")
+                        firsc=int(input("choice ?? "))
+                        simp=int(input("how many peices? "))
+                        if firsc==20:
+                                print("ok")
+                                j=simp*7600
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter waist size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==30:
+                                print("ok")
+                                j=simp*2600
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter waist size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==70:
+                                print("ok")
+                                j=simp*1700
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter waist size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==10:
+                                print("ok")
+                                j=simp*2200
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter waist size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==77:
+                                print("ok")
+                                j=simp*900
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter waist size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        else:
+                            print("INVALID CHOICE !!")
+                               
+                    elif firsc==33:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO ON 'TOP' OF THE WORLD^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we are basically a sneakeer based app , still you need to stay on top of the wolrd LADIES.  and for that.. you need some stylsih TOPS, there you go !!")
+                        for p in TOP:
+                           print(TOP[p])
+                           p+=1
+                        print("to EXIT press 3")
+                        print("to order , select any TOP ")
+                        firsc=int(input("choice ?? "))
+                        simp=int(input("how many peices? "))
+                        if firsc==13:
+                                print("ok")
+                                j=simp*7600
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter top size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==51:
+                                print("ok")
+                                j=simp*2600
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter top size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==73:
+                                print("ok")
+                                j=simp*1700
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter top size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==17:
+                                print("ok")
+                                j=simp*2200
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter top size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        elif firsc==69:
+                                print("ok")
+                                j=simp*900
+                                NAME=str(input("customer's name - "))
+                                ADD=str(input("delivery address - "))
+                                pincode=str(input("pincode - "))
+                                size=str(input("enter top size - "))
+                                print("THANKS FOR SHOPPING")
+                                print("your total BILL is : ")
+                                print(j)
+                        else:
+                            print("INVALID CHOICE !!")
+
+                           
+
+
+
+                           
+        else:
+            print("INVALID LOGIN !!")
+
+
+
+
+           
+#wihthout login browsing starts here        
+
+
+
+
+    elif firsc==2:
+         for i in GMENU:
+                    print(GMENU[i])
+                    i+=1
+         firsc=int(input("your preference ? "))
+         if firsc==1:
+                        for k in MMENU:
+                            print(MMENU[k])
+                            k+=1
+                        print("choose any option")
+                        print("to exit press 3")
+                        firsc=int(input("choice?? "))
+                        if firsc==11:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE SNEAKER HOOD^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we provide 3 different brands")
+                            for z in SNMENU:
+                                print(SNMENU[z])
+                                z+=1
+                            print("press 3 to EXIT")
+                            firsc=int(input("choice ? "))
+                            if firsc==23:
+                                for c in NIK:
+                                    print(NIK[c])
+                                    c+=1
+                            elif firsc==45:
+                                for c in PUM:
+                                    print(PUM[c])
+                                    c+=1
+                            elif firsc==69:
+                                for c in CON:
+                                    print(CON[c])
+                                    c+=1
+                            print("to order press 1")
+                            print("to exit press 3 ")
+                            firsc=int(input("CHOICE? "))
+                            if firsc==1:
+                                print("you must login first !!")
+                                print("enter your customer id and password please")
+                                CID=str(input("id - "))
+                                pswd=input("password - ")
+                                if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                    print("login succesful !!")
+                                    print("what do you want yo order now?:")
+                                    firsc=int(input("choice??   "))
+                                    simp=int(input("how many peices? "))
+                                    if firsc==12:
+                                        print("ok")
+                                        j=simp*76000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==21:
+                                        print("ok")
+                                        j=simp*76000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==90:
+                                        print("ok")
+                                        j=simp*76000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==13 or firsc==00 or firsc==93 :
+                                        print("ok")
+                                        j=simp*26000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==61 or firsc==92 or firsc==98 :
+                                        print("ok")
+                                        j=simp*17000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==66 or firsc==110 or firsc==19 :
+                                        print("ok")
+                                        j=simp*22000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==51 or firsc==7878 or firsc==80 :
+                                        print("ok")
+                                        j=simp*9000
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    else:
+                                        print("INVALID CHOICE !!")
+                                       
+                                   
+                                else :
+                                    print("INVALID LOGIN !!")
+
+                        elif firsc==22:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE THE SHIRT CLASS^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we are basically a sneakeer based app , so we provide limited yet CLASSY shirts")
+                            for p in SHIR:
+                                print(SHIR[p])
+                                p+=1
+                            print("to order press 1")
+                            print("to exit press 3 ")
+                            firsc=int(input("CHOICE? "))
+                            if firsc==1:
+                                print("you must login first !!")
+                                print("enter your customer id and password please")
+                                CID=str(input("id - "))
+                                pswd=input("password - ")
+                                if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                    print("login succesful !!")
+                                    print("what do you want yo order now?:")
+                                    firsc=int(input("choice??   "))
+                                    simp=int(input("how many peices? "))
+                                    if firsc==46:
+                                        print("ok")
+                                        j=simp*7600
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter shirt size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==47:
+                                        print("ok")
+                                        j=simp*2600
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter shirt size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==56:
+                                        print("ok")
+                                        j=simp*1700
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter shirt size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==57:
+                                        print("ok")
+                                        j=simp*2200
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter shirt size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==59:
+                                        print("ok")
+                                        j=simp*900
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter shirt size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    else:
+                                        print("INVALID CHOICE !!")
+                        elif firsc==33:
+                            print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE THE DENIM SHENIM^^^^^^^^^^^^^^^^^^^^^^")
+                            print("  ")
+                            print("we are basically a sneakeer based app , so with dope footwear , you also need some dope DENIMS , there you go !!")
+                            for p in DNM:
+                                print(DNM[p])
+                                p+=1
+                            print("to order press 1")
+                            print("to exit press 3 ")
+                            firsc=int(input("CHOICE? "))
+                            if firsc==1:
+                                print("you must login first !!")
+                                print("enter your customer id and password please")
+                                CID=str(input("id - "))
+                                pswd=input("password - ")
+                                if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                    print("login succesful !!")
+                                    print("what do you want yo order now?:")
+                                    firsc=int(input("choice??   "))
+                                    simp=int(input("how many peices? "))
+                                    if firsc==14:
+                                        print("ok")
+                                        j=simp*7600
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter DNM size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==71:
+                                        print("ok")
+                                        j=simp*2600
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter DNM size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==89:
+                                        print("ok")
+                                        j=simp*1700
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter DNM size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==25:
+                                        print("ok")
+                                        j=simp*2200
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter DNM size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    elif firsc==48:
+                                        print("ok")
+                                        j=simp*900
+                                        NAME=str(input("customer's name - "))
+                                        ADD=str(input("delivery address - "))
+                                        pincode=str(input("pincode - "))
+                                        size=str(input("enter DNM size - "))
+                                        print("THANKS FOR SHOPPING")
+                                        print("your total BILL is : ")
+                                        print(j)
+                                    else:
+                                        print("INVALID CHOICE !!")
+
+
+#wihtout login women starts here
+
+                                       
+         elif firsc==2:
+                    for k in WMENU:
+                            print(WMENU[k])
+                            k+=1
+                    print("choose any option")
+                    print("to exit press 3")
+                    firsc=int(input("choice?? "))
+                    if firsc==11:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE SNEAKER HOOD^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we provide 3 different brands")
+                        for z in SNMENU:
+                            print(SNMENU[z])
+                            z+=1
+                        print("press 3 to EXIT")
+                        firsc=int(input("choice ? "))
+                        if firsc==23:
+                            for c in NIK:
+                                print(NIK[c])
+                                c+=1
+                        elif firsc==45:
+                            for c in PUM:
+                                print(PUM[c])
+                                c+=1
+                        elif firsc==69:
+                            for c in CON:
+                                print(CON[c])
+                                c+=1
+                        print("to order press 1")
+                        print("to exit press 3 ")
+                        firsc=int(input("CHOICE? "))
+                        if firsc==1:
+                             print("you must login first !!")
+                             print("enter your customer id and password please")
+                             CID=str(input("id - "))
+                             pswd=input("password - ")
+                             if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                print("login succesful !!")
+                                print("what do you want yo order now?:")
+                                firsc=int(input("choice??   "))
+                                simp=int(input("how many peices? "))
+                                if firsc==12:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==21:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==90:
+                                    print("ok")
+                                    j=simp*76000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==13 or firsc==00 or firsc==93 :
+                                    print("ok")
+                                    j=simp*26000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==61 or firsc==92 or firsc==98 :
+                                    print("ok")
+                                    j=simp*17000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==66 or firsc==110 or firsc==19 :
+                                    print("ok")
+                                    j=simp*22000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==51 or firsc==7878 or firsc==80 :
+                                    print("ok")
+                                    j=simp*9000
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter shoe size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                else:
+                                    print("INVALID CHOICE !!")
+                             else:
+                                 print("login failed !!")
+                                   
+                    elif firsc==22:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO THE JEAN FIT SECTION^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we are basically a sneakeer based app , so we provide limited yet STYLISH JEANS")
+                        for p in JEAN:
+                            print(JEAN[p])
+                            p+=1
+                        print("to order press 1")
+                        print("to exit press 3 ")
+                        firsc=int(input("CHOICE? "))
+                        if firsc==1:
+                             print("you must login first !!")
+                             print("enter your customer id and password please")
+                             CID=str(input("id - "))
+                             pswd=input("password - ")
+                             if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                print("login succesful !!")
+                                print("what do you want yo order now?:")
+                                firsc=int(input("choice??   "))
+                                simp=int(input("how many peices? "))
+                                if firsc==20:
+                                    print("ok")
+                                    j=simp*7600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter waist size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==30:
+                                    print("ok")
+                                    j=simp*2600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter waist size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==70:
+                                    print("ok")
+                                    j=simp*1700
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter waist size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==10:
+                                    print("ok")
+                                    j=simp*2200
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter waist size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==77:
+                                    print("ok")
+                                    j=simp*900
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter waist size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                else:
+                                    print("INVALID CHOICE !!")
+                             else:
+                                 print("login failed !!")
+                           
+                               
+                    elif firsc==33:
+                        print("^^^^^^^^^^^^^^^^^^^^^^WELCOME TO ON TOP OF THE WORLD^^^^^^^^^^^^^^^^^^^^^^")
+                        print("  ")
+                        print("we are basically a sneakeer based app , still you need to stay on top of the wolrd LADIES.  and for that.. you need some stylsih TOPS, there you go !!")
+                        for p in TOP:
+                            print(TOP[p])
+                            p+=p
+                        print("to order press 1")
+                        print("to exit press 3 ")
+                        firsc=int(input("CHOICE? "))
+                        if firsc==1:
+                             print("you must login first !!")
+                             print("enter your customer id and password please")
+                             CID=str(input("id - "))
+                             pswd=input("password - ")
+                             if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+                                print("login succesful !!")
+                                print("what do you want yo order now?:")
+                                firsc=int(input("choice??   "))
+                                simp=int(input("how many peices? "))
+                                if firsc==13:
+                                    print("ok")
+                                    j=simp*7600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter top size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==51:
+                                    print("ok")
+                                    j=simp*2600
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter top size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==73:
+                                    print("ok")
+                                    j=simp*1700
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter top size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==17:
+                                    print("ok")
+                                    j=simp*2200
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter top size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                elif firsc==69:
+                                    print("ok")
+                                    j=simp*900
+                                    NAME=str(input("customer's name - "))
+                                    ADD=str(input("delivery address - "))
+                                    pincode=str(input("pincode - "))
+                                    size=str(input("enter top size - "))
+                                    print("THANKS FOR SHOPPING")
+                                    print("your total BILL is : ")
+                                    print(j)
+                                else:
+                                    print("INVALID CHOICE !!")
+
+                             else:
+                                 print("login failed !!")
+
+
+#ADMIN SECTION BELOW__________________________________________________________________________________________________________________________________________________________________
+
+
+while firsc==2:
+
+    print("for administration , you must login first .")
+    CID=str(input("id - "))
+    pswd=str(input("password - "))
+    if (CID=='laksh' and pswd=='shdq6eGLA*')or (CID=='adya' and pswd=='n9rev4GLA$') or (CID=='samridhi' and pswd=='qaxy1234'):
+        print("login succesful !!")
+        print("To VIEW STONKSS , press 1")
+        firsc=int(input("choice ? "))
+        if firsc==1:
+            print("okay ")
+            for i in MMENU:
+                print(MMENU[i])
+            print("SNEAKER MENU BELOW")
+            for c in NIK:
+                print(NIK[c])
+            print("_____________________________________________________")
+            for c in PUM:
+                print(PUM[c])
+            print("_____________________________________________________")
+            for c in CON:
+                print(CON[c])
+            print("_____________________________________________________")
+            print("SHIRT MENU BELOW")
+            for c in SHIR:
+                print(SHIR[c])
+            print("_____________________________________________________")
+            print("DENIM MENU BELOW")
+            for c in DNM:
+                print(DNM[c])
+            print("_____________________________________________________")
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WOMEN MENU BELOW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            for i in WMENU:
+                print(WMENU[i])
+            print("SNEAKER MENU BELOW")
+            for c in NIK:
+                print(NIK[c])
+            print("_____________________________________________________")
+            for c in PUM:
+                print(PUM[c])
+            print("_____________________________________________________")
+            for c in CON:
+                print(CON[c])
+            print("_____________________________________________________")
+            print("JEAN MENU BELOW")
+            for i in JEAN:
+                print(JEAN[i])
+            print("_____________________________________________________")
+            print("TOP MENU BELOW")
+            for i in TOP:
+                print(TOP[i])
+            print("_____________________________________________________")
+            print("DO YOU WANT TO UPDATE MENU NOW??")
+            print("for yes press 2   for no press 3")
+            firsc=int(input("choice?? "))
+            while firsc!=3:
+                if firsc==2:
+                    print("what menu you want to update ?")
+                    print("men or women")
+                    print("for men press M")
+                    print("for women press W")
+                    m=str(input("hnji btao - "))
+                    if m=='M':
+                        print("okay")
+                        print("what menu to update?")
+                        for i in MMENU:
+                            print(MMENU[i])
+                        print("what to update ?")
+                        firsc=int(input("hnji - "))
+                        if  firsc==11:
+                            print("for NIKE press 1")
+                            print("for PUMA press 2")
+                            print("for CONVERSE press 3")
+                            firs=int(input("choice ? "))
+                            if firs==1:
+                                print("okay")
+                                for key in NIK:
+                                    print(key,":",NIK[key])
+                                print("ENTER INDEX OF PRODUC THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del NIK[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in NIK:
+                                    print(NIK[i])
+                                print("thank you admin")
+                                break
+                            elif firs==2:
+                                print("okay")
+                                for key in PUM:
+                                    print(key,":",PUM[key])
+                                print("ENTER INDEX PF PRODUCT THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del PUM[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in PUM:
+                                    print(PUM[i])
+                                print("thank you admin")
+                                break
+                               
+                            elif firs==3:
+                                print("okay")
+                                for key in CON:
+                                    print(key,":",CON[key])
+                                print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del CON[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in CON:
+                                    print(CON[i])
+                                print("thank you admin")
+                                break
+                               
+                        elif firsc==22:
+                            for key in SHIR:
+                                print(key,":",SHIR[key])
+                            print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                            n=int(input("index - "))
+                            del SHIR[n]
+                            print("deletion succesfull")
+                            print("new menu is ..")
+                            for i in SHIR:
+                                print(SHIR[i])
+                            print("thank you admin")
+                            break
+                           
+                        elif firsc==33:
+                            for key in DNM:
+                                print(key,":",DNM[key])
+                            print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                            n=int(input("index - "))
+                            del DNM[n]
+                            print("deletion succesfull")
+                            print("new menu is ..")
+                            for i in DNM:
+                                print(DNM[i])
+                            print("thank you admin")
+                            break
+                        else:
+                            print("invalid choice")
+
+                    elif m=='W':
+                        print("okay")
+                        for i in WMENU:
+                            print(WMENU[i])
+                        print("what to update ?")
+                        firsc=int(input("hnji - "))
+                        if  firsc==11:
+                            print("for NIKE press 1")
+                            print("for PUMA press 2")
+                            print("for CONVERSE press 3")
+                            firs=int(input("choice ? "))
+                            if firs==1:
+                                print("okay")
+                                for key in NIK:
+                                    print(key,":",NIK[key])
+                                print("ENTER INDEX OF PRODUC THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del NIK[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in NIK:
+                                    print(NIK[i])
+                                print("thank you admin")
+                                break
+                            elif firs==2:
+                                print("okay")
+                                for key in PUM:
+                                    print(key,":",PUM[key])
+                                print("ENTER INDEX PF PRODUCT THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del PUM[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in PUM:
+                                    print(PUM[i])
+                                print("thank you admin")
+                                break
+                               
+                            elif firs==3:
+                                print("okay")
+                                for key in CON:
+                                    print(key,":",CON[key])
+                                print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                                n=int(input("index - "))
+                                del CON[n]
+                                print("deletion succesfull")
+                                print("new menu is ..")
+                                for i in CON:
+                                    print(CON[i])
+                                print("thank you admin")
+                                break
+                               
+                        elif firsc==22:
+                            for key in JEAN:
+                                print(key,":",JEAN[key])
+                            print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                            n=int(input("index - "))
+                            del JEAN[n]
+                            print("deletion succesfull")
+                            print("new menu is ..")
+                            for i in JEAN:
+                                print(JEAN[i])
+                            print("thank you admin")
+                            break
+                           
+                        elif firsc==33:
+                            for key in TOP:
+                                print(key,":",TOP[key])
+                            print("ENTER INDEX OF PRODUCT THAT IS OUT OF STOCK - ")
+                            n=int(input("index - "))
+                            del TOP[n]
+                            print("deletion succesfull")
+                            print("new menu is ..")
+                            for i in TOP:
+                                print(TOP[i])
+                            print("thank you admin")
+                            break
+                        else:
+                            print("INVALID CHOICE !")
+                       
+                    elif m=='N':
+                        print("okay buddy")
+                        break
+
+        else:
+            print("invalid choice")
+
+    else:
+        print("INVALID LOGIN DETAILS !!")
